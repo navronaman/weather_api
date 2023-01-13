@@ -1,11 +1,12 @@
 from flask import Flask, render_template
-import pandas as pd
 
-app = Flask("Website")
+app = Flask(__name__)
+
 
 @app.route("/")
 def home():
     return render_template("home.html")
+
 
 @app.route("/api/v1/<station>/<date>")
 def page(station, date):
@@ -14,4 +15,6 @@ def page(station, date):
             "date": date,
             "temperature": temperature}
 
-app.run(debug=True)
+
+if __name__ == "__main__":
+    app.run(debug=True)
