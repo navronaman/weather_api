@@ -7,8 +7,10 @@
 <body>
     <h1 style="font-family: Arial">Weather Data API</h1>
     <p style="font-family: Arial"> URL Format: http://127.0.0.1:5000/api/v1/station/data</p>
-    <p style="font-family: Arial"> URL Example: <a href="http://127.0.0.1:5000/api/v1/10/2005-04-26"> http://127.0.0.1:5000/api/v1/10/2005-04-26 </a></p>
-    <p>{{data|safe}}</p>
+    <p style="font-family: Arial"> One station, one date: <a href="http://127.0.0.1:5000/api/v1/10/2005-04-26"> http://127.0.0.1:5000/api/v1/10/2005-04-26 </a></p>
+    <p style="font-family: Arial"> One station, all date: <a href="http://127.0.0.1:5000/api/v1/10"> http://127.0.0.1:5000/api/v1/10 </a></p>
+    <p style="font-family: Arial"> One station, all year: <a href="http://127.0.0.1:5000/api/v1/10/2005"> http://127.0.0.1:5000/api/v1/10/2005 </a></p>
+    <p style="font-family: Arial">{{data|safe}}</p>
 
 </body>
 </html>
